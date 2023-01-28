@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alie : 1.0</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1 class="logo">ALIE 1.0</h1>
+    <section class="hero">
+        <h1><span class="generate">Generate</span> Text <span class="content">Content</span><br>With <span class="ai">AI</span></h1>
+        <form action="/" method="post">
+            <input class="input" placeholder="talk with Ali 1.0 : " name="user_input">
+            <button class="fa fa-send" type="submit"></button>
+        </form>
+        <div class="res_box">
+            {% if result != None %}
+                {{result}}
+            {% endif %}
+        </div>
+    </section>
+</body>
+</html>

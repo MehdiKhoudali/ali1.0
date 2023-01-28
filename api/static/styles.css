@@ -1,0 +1,76 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body {
+    background-color: rgb(22, 22, 22);
+    color: white;
+}
+.hero {
+    height: 100vh;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center !important;
+    text-align: center;
+}
+.hero h1 {
+    font-size: 4rem;
+    margin: 20px;
+}
+.generate, .logo {
+    background: -webkit-linear-gradient(45deg, #09009f, #00ff95 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.content {
+    background: -webkit-linear-gradient(45deg, #ff6004, #ff0000 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.ai {
+    background: -webkit-linear-gradient(45deg, #c004ff, #00ff2f 80%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.form {
+    width: 100%;
+    height: 100%;
+}
+.input {
+    outline: none;
+    border: 1px solid #00ff95;
+    color: white;
+    width: 250px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 30px;
+    background-color: transparent;
+    border-radius: 30px;
+}
+.fa-send {
+    background: #00ff95;
+    height: 50px;
+    width: 50px;
+    color: white;
+    border-radius: 50px;
+}
+.res_box {
+    background-color: rgb(28, 27, 27);
+    padding: 20px;
+    margin: 20px;
+    border-radius: 30px;
+    text-align: left;
+    font-size: 12px;
+    min-width: 85%;
+    border: 1px solid #54f7b3;
+}
+.logo {
+    position: fixed;
+    top: 20px;
+    left: 40px;
+}
