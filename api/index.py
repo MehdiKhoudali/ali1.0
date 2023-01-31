@@ -3,7 +3,7 @@ import os
 from flask import Flask, redirect, render_template, request, url_for
 
 app = Flask(__name__)
-openai.api_key = os.environ.get('API_KEY')
+openai.api_key = os.environ.get('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')
 
 
 @app.route("/", methods=("GET", "POST"))
