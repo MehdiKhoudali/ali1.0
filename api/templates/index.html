@@ -13,12 +13,38 @@
 </head>
 
 <body>
-    <div class="container col-xxl-16 px-8 py-5">
-        <div class="align-items-center py-5">
-            <h1 class="py-2 px-4 py-5">ALIE 1.0</h1>
-            <div class="col-lg-6">
+    <div class="container col-xxl-16 px-8">
+        <nav class="navbar d-flex  navbar-dark align-items-center justify-content-between">
+            <a class="navbar-brand" href="/">
+                AlI 1.0
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Features
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/">Text content generation</a>
+                            <a class="dropdown-item" href="#">Image generation (comming soon )</a>
+                            <a class="dropdown-item" href="#">Project presentation (comming soon )</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="align-items-center my-4">
+            <div class="col-lg-7">
                 <h1 class="display-5 fw-bold lh-1 mb-3">Text content generation with AI</h1>
-                <p class="lead">Generate text content using Ai, solve mathmatical problemes, write redaction, do your
+                <p class="lead">Generate text content using AI, solve mathmatical problemes, write redactions, do your
                     homeworks ....</p>
                 <form method="post" action="/">
                     <div class="form-group">
@@ -27,27 +53,32 @@
                             placeholder="Talk with AI">
                         <small id="emailHelp" class="form-text text-muted">Chat with our AI</small>
                     </div>
-                    <button type="submit" class="btn btn-primary">Submit</button>
+                    <button type="submit" class="btn btn-primary">Submit (salut taha, anas, asaad, smaeil de mehdi)</button>
                 </form>
+                <p class="lead my-4 mx-0">
+                    {% if result != None %}
+                    {{result}}
+                    <br>
+                    <br>
+                    <a href="/" class="clear">clear</a>
+                    {% endif %}
+                </p>
             </div>
-            <p class="lead my-4 mx-4">
-                {% if result != None %}
-                {{result}}
-                {% endif %}
-            </p>
         </div>
     </div>
     <section>
-        <div class="container col-xxl-8 px-4 py-5">
+        <div class="container col-xxl-8 px-4 ">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5 border-top border-dark">
                 <div class="col-lg-6">
                     <h1 class="display-5 fw-bold lh-1 mb-3">Use AI in school</h1>
-                    <p class="lead">Quickly do your school exercice, redaction, mathematical problemes..... with AI and
-                        save your time and energy</p>
+                    <p class="lead">AI can help you in school in a variety of ways. It can help you with research,
+                        organization, and time management, it can assist with note-taking and studying, it can help with
+                        grading and providing feedback, it can help create personalized learning experiences, and it can
+                        assist in tutoring and providing feedback. AI is already being used in classrooms around the
+                        world to help students learn in more efficient and effective ways.</p>
                 </div>
                 <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="https://axenehp.com/wp-content/uploads/2019/02/20190225_header-800x509.jpg"
-                        class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500"
+                    <img src="https://axenehp.com/wp-content/uploads/2019/02/20190225_header-800x509.jpg" class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500"
                         loading="lazy">
                 </div>
             </div>
@@ -55,22 +86,42 @@
         <div class="container col-xxl-8 px-4 py-5">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5 border-top border-dark">
                 <div class="col-10 col-sm-8 col-lg-6">
-                    <img src="https://axenehp.com/wp-content/uploads/2019/02/20190225_header-800x509.jpg"
+                    <img src="https://www.extremetech.com/wp-content/uploads/2015/09/sat-ai-head-640x353.jpg"
                         class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500">
                 </div>
                 <div class="col-lg-6">
                     <h1 class="display-5 fw-bold lh-1 mb-3">Use AI in your buisness</h1>
-                    <p class="lead">Quickly generate products descriptions, cold emails, newsletter service, youtube video description or video scripts.....</p>
+                    <p class="lead">AI can help your business in a number of different ways. It can be used to automate
+                        mundane tasks, improve customer service, create more accurate forecasts, and develop innovative
+                        products and services. AI can also be used to optimize existing processes, such as marketing,
+                        sales, and supply chain operations. Additionally, AI can help to reduce costs and increase
+                        efficiency by streamlining operations.</p>
+                </div>
+            </div>
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5 border-top border-dark">
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Use AI in your life</h1>
+                    <p class="lead">AI can help you in a variety of ways in your life. AI can help you save time and
+                        automate tedious tasks, such as scheduling appointments, managing your finances, and even
+                        helping you make decisions. AI can also be used to provide personalized recommendations, to help
+                        you stay organized and on track with your goals, or even to offer insight and advice. AI can
+                        also help you stay connected with family and friends and even monitor your health and wellbeing.
+                    </p>
+                </div>
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="https://media.istockphoto.com/id/957654454/photo/ai-concept.jpg?s=1024x1024&w=is&k=20&c=BuXgN8PBHlha-ZkLdnIIRu2NeofbcCs9wDUADZ3NjwU="
+                        class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500">
                 </div>
             </div>
             <footer>
-                <h4>Build with ❤️ by <a href="https://www.linkedin.com/in/mehdi-khoudali-74ab72249/">Mehdi Khoudali</a></h4>
+                <h4>Build with ❤️ by <a href="https://www.linkedin.com/in/mehdi-khoudali-74ab72249/"
+                        target="_blank">Mehdi Khoudali</a>
+                </h4>
                 <h4>PLease if the ai answer is not correct try again, our servers have many users.</h4>
             </footer>
         </div>
 
     </section>
-
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
         integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
         crossorigin="anonymous"></script>

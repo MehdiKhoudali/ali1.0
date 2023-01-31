@@ -1,10 +1,28 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Poppins', sans-serif;
 }
 body {
     background-color: rgb(22, 22, 22);
     color: white;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.clear {
+    background: red;
+    color: white;
+    padding: 5px 20px 5px 20px;
+    border-radius: 3px;
+    align-items: center;
+    line-height: 0;
+    font-size: 15px;
+}
+.clear:hover {
+    color: white;
+    text-decoration: none;
 }
