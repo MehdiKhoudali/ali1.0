@@ -14,7 +14,7 @@ def index():
             model="text-davinci-003",
             prompt= animal,
             temperature=0.7,
-            max_tokens=4000,
+            max_tokens=2000,
         )
         return redirect(url_for("index", result=response.choices[0].text))
 
