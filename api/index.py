@@ -5,7 +5,6 @@ from flask import Flask, redirect, render_template, request, url_for
 app = Flask(__name__)
 openai.api_key = os.environ.get('API_KEY')
 
-
 @app.route("/", methods=("GET", "POST"))
 def index():
     if request.method == "POST":
@@ -23,5 +22,5 @@ def index():
 
 
 if __name__ == "__main__":
-    app.run(debug=False)
+    app.run(debug=True)
 
