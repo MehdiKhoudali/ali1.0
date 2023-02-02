@@ -13,8 +13,8 @@
 </head>
 
 <body>
-    <div class="container col-xxl-16 px-8">
-        <nav class="navbar d-flex  navbar-dark align-items-center justify-content-between">
+    <div class="container col-xxl-16 px-8 w-100">
+        <nav class="navbar d-flex navbar-expand-lg  navbar-dark align-items-center justify-content-between w-100">
             <a class="navbar-brand" href="/">
                 <img src="{{ url_for('static', filename='final.png') }}" alt="" style="width: 100px;">
             </a>
@@ -42,9 +42,9 @@
             </div>
         </nav>
         <div class="align-items-center my-4">
-            <div class="col-lg-7">
+            <div class="col-lg-8">
                 <h1 class="display-5 fw-bold lh-1 mb-3">Text content generation with AI</h1>
-                <p class="lead">Generate text content using AI, solve mathmatical problemes, write redactions, do your
+                <p class="lead">Generate text content using AI, solve mathematical problemes, write redactions, do your
                     homeworks ....</p>
                 <form method="post" action="/">
                     <div class="form-group">
@@ -52,6 +52,7 @@
                         <input type="text" name="user_input" class="form-control" id="exampleInputEmail1"
                             placeholder="Talk with AI">
                         <small id="emailHelp" class="form-text text-muted">Please our app have many users, if the ai answer is not good, please try again.</small>
+                        <small id="emailHelp" class="form-text text-muted">Build with ❤️ by mehdi khoudali .</small>
                     </div>
                     <button type="submit" class="btn btn-primary">Submit</button>
                 </form>
