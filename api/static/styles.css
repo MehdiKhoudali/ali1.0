@@ -147,3 +147,25 @@ li {
     left: 0;
     right: -55.8px;
 }
+
+#loading {
+    border: 1px solid #f3f3f3;
+    border-radius: 50%;
+    border-top: 1px solid #444444;
+    width: 15px;
+    height: 15px;
+    animation: spin 1s linear infinite;
+    margin-right: 10px;
+    display: none;
+}
+      
+@keyframes spin {
+    100% {
+        transform: rotate(360deg);
+    }
+}
+      
+.submit {
+    display: flex;
+    align-items: center;
+}

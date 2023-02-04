@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Alie 1.0 | {% block title %}{% endblock %}</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+	    <div class="container col-xxl-16 px-8 w-100">
+        <nav class="navbar d-flex navbar-expand-lg  navbar-dark align-items-center justify-content-between w-100">
+            <a class="navbar-brand" href="/">
+                <!-- <img src="{{ url_for('static', filename='final.png') }}" alt="" style="width: 100px;"> -->
+                Alie
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Features
+                        </a>
+                        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/">Text completion</a>
+                            <a class="dropdown-item" href="/question_to_code">Turn question into code</a>
+                            <a class="dropdown-item" href="#">Image generation (comming soon )</a>
+                            <a class="dropdown-item" href="#">Project presentation (comming soon )</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        {% block content %}
+        {% endblock %}
+        <section>
+        <div class="container col-xxl-8 px-4 ">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5 border-top border-dark">
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Use AI in school</h1>
+                    <p class="lead">AI can help you in school in a variety of ways. It can help you with research,
+                        organization, and time management, it can assist with note-taking and studying, it can help with
+                        grading and providing feedback, it can help create personalized learning experiences, and it can
+                        assist in tutoring and providing feedback. AI is already being used in classrooms around the
+                        world to help students learn in more efficient and effective ways.</p>
+                </div>
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="https://axenehp.com/wp-content/uploads/2019/02/20190225_header-800x509.jpg"
+                        class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500"
+                        loading="lazy">
+                </div>
+            </div>
+        </div>
+        <div class="container col-xxl-8 px-4 py-5">
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5 border-top border-dark">
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="https://www.extremetech.com/wp-content/uploads/2015/09/sat-ai-head-640x353.jpg"
+                        class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500">
+                </div>
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Use AI in your buisness</h1>
+                    <p class="lead">AI can help your business in a number of different ways. It can be used to automate
+                        mundane tasks, improve customer service, create more accurate forecasts, and develop innovative
+                        products and services. AI can also be used to optimize existing processes, such as marketing,
+                        sales, and supply chain operations. Additionally, AI can help to reduce costs and increase
+                        efficiency by streamlining operations.</p>
+                </div>
+            </div>
+            <div class="row flex-lg-row-reverse align-items-center g-5 py-5 border-top border-dark">
+                <div class="col-lg-6">
+                    <h1 class="display-5 fw-bold lh-1 mb-3">Use AI in your life</h1>
+                    <p class="lead">AI can help you in a variety of ways in your life. AI can help you save time and
+                        automate tedious tasks, such as scheduling appointments, managing your finances, and even
+                        helping you make decisions. AI can also be used to provide personalized recommendations, to help
+                        you stay organized and on track with your goals, or even to offer insight and advice. AI can
+                        also help you stay connected with family and friends and even monitor your health and wellbeing.
+                    </p>
+                </div>
+                <div class="col-10 col-sm-8 col-lg-6">
+                    <img src="https://media.istockphoto.com/id/957654454/photo/ai-concept.jpg?s=1024x1024&w=is&k=20&c=BuXgN8PBHlha-ZkLdnIIRu2NeofbcCs9wDUADZ3NjwU="
+                        class="d-block mx-lg-auto img-fluid" alt="Bootstrap Themes" width="700" height="500">
+                </div>
+            </div>
+        </div>
+    </div>
+	 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.7/dist/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+</html>

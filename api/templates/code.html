@@ -1,0 +1,45 @@
+
+{% extends 'base.html' %}
+
+{% block title %}
+Turn question into code
+{% endblock %}
+
+{% block content %}
+    <div class="align-items-center my-4">
+        <div class="col-lg-8">
+            <h1 class="display-5 fw-bold lh-1 mb-3">Turn any question into code</h1>
+            <p class="lead">Turn any question into code using AI, solve your bugs, add features .....</p>
+            <form method="post" action="/question_to_code" id="myForm">
+                <div class="form-group">
+                    <label>Turn any qustion into code</label>
+                    <input type="text" name="user_input" class="form-control" id="exampleInputEmail1"
+                        placeholder="Ask what you want in every language : " required>
+                    <small id="emailHelp" class="form-text text-muted">Turn you questions into code</small>
+                </div>
+                <button type="submit" class="btn btn-primary submit"><div id="loading" class="center"></div>Submit</button>
+            </form>
+            <p class="lead my-4 mx-0">
+                {% if result != None %}
+                    <pre class="bg-white rounded-1 p-2">
+                        <code>
+                            {{result}}
+                        </code>
+                    </pre>
+                {% endif %}
+                {% if result != None %}
+                    <a href="/question_to_code" class="clear">clear</a>
+                {% endif %}
+            </p>
+        </div>
+    </div>
+    <script type="text/javascript">
+        function showLoader() {
+          document.getElementById("loading").style.display = "block";
+        }
+        document.getElementById("myForm").addEventListener("submit", showLoader);
+    </script>
+{% endblock %}
+
+
+
