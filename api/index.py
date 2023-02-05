@@ -19,7 +19,6 @@ def index():
     result = request.args.get("result")
     return render_template("index.html", result=result)
 
-
 @app.route("/question_to_code", methods=('GET', 'POST'))
 def queston_to_code():
     if request.method == "POST":
