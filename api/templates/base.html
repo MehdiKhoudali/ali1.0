@@ -14,7 +14,6 @@
 	    <div class="container col-xxl-16 px-8 w-100">
         <nav class="navbar d-flex navbar-expand-lg  navbar-dark align-items-center justify-content-between w-100">
             <a class="navbar-brand" href="/">
-                <!-- <img src="{{ url_for('static', filename='final.png') }}" alt="" style="width: 100px;"> -->
                 Alie
             </a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
@@ -34,7 +33,7 @@
                         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                             <a class="dropdown-item" href="/">Text completion</a>
                             <a class="dropdown-item" href="/question_to_code">Turn question into code</a>
-                            <a class="dropdown-item" href="#">Image generation (comming soon )</a>
+                            <a class="dropdown-item" href="/image_generation">Image generation (comming soon )</a>
                             <a class="dropdown-item" href="#">Project presentation (comming soon )</a>
                         </div>
                     </li>
@@ -44,6 +43,7 @@
 
         {% block content %}
         {% endblock %}
+
         <section>
         <div class="container col-xxl-8 px-4 ">
             <div class="row flex-lg-row-reverse align-items-center g-5 py-5 border-top border-dark">
